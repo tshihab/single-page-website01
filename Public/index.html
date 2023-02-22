@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked Cake</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/c454432cc6.js" crossorigin="anonymous"></script>
+
+
+    <!-- swiper-bundle-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+    
+
+    <div class="container">
+
+        <!-- Navigation Panel -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+        
+                <!-- logo -->
+                <!-- <a class="navbar-brand" style="font-size: 2.25rem; font-weight: 800; color: #f55c5c;" href="#">HomeBake</a> -->
+
+                <a href="index.html">
+                    <button data-text="Awesome" class="logo-btn">
+                        <span class="actual-text">&nbsp;HomeBake&nbsp;</span>
+                        <span class="hover-text" aria-hidden="true">&nbsp;HomeBake&nbsp;</span>
+                    </button>
+                </a>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+        
+                <!-- menu section -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+                        </li>
+        
+                        <!-- dropdown menu -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Collection
+                            </a>
+                            <ul class="dropdown-menu ms-2">
+                                <li><a class="dropdown-item drop-down-menu" href="#">Chocolate Cake</a></li>
+                                <li><a class="dropdown-item drop-down-menu" href="#">Vanila Cake</a></li>
+        
+                                <li><a class="dropdown-item drop-down-menu" href="#">Smoothie Cake</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="nav-item ms-5">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Shop</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">About Us</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Contact</a>
+                        </li>
+        
+        
+                    </ul>
+        
+                    <button class="btn btn-primary rounded-pill border-0 py-2 px-5" type="button">Login</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- jumbotron -->
+        <div class="jumbotron d-flex align-items-center section-height">
+            <div class="row">
+                <div class="col-12 text-center text-md-start">
+
+                    <div class="title py-2 px-3 d-flex align-item-center rounded-pill">
+                        <p class="lead">Less Suger Cake</p>
+                        <img src="images/Chocolate-Cake.png" alt="Tasty Yogurt" class="img-fluid">
+                    </div>
+
+                    <h1 class="display-3 text-white drop-shadow mt-3 text-shadow">Find and Get your Perfect</h1>
+
+                    <h2 class="display-5 text-shadow mt-0">Baked Cake</h2>
+
+                    <p class="lead">Asian Bakery opened its first location in singapore with 12 Amazing <br>members. Inspired by the classing recipes of er two beloved parents</p>
+        
+                    <!-- <a class="btn btn-primary btn-lg rounded-pill px-4 py-2 mt-5 mb-5 mb-md-0 border-0 gradient" href="#" role="button">Order Now</a> -->
+
+                    <!-- Order Now Button -->
+                    <button class="btn btn-primary rounded-pill py-2 px-5 mt-5 order-btn">
+                        <p>Order Now</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        
+        </div>
+
+
+        <!-- About us Ingradients -->
+        <div class="row section-height align-items-center">
+            <div class="col-12 col-md-5">
+                <div class="my-box2">
+                    <img src="images/our-cake.jpg"class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-md-7 px-5">
+                <div class="my-box2 margin-bot">
+                    <h1 class="fs-1 bolder-font1 text-shadow">About <span class="text-danger fs-1 fw-bolder">Ingredients</span></h1>
+                        <p class="my-lead text-white mt-5">BakedCake is one of only a handful few enduring Craft Bakeries in Surrey. We have assembled our notoriety on consolidating great quality conventional heating with a great incentive for cash.</p>
+                        <p class="my-lead text-black">We offer our clients a full scope of bread, forte bread, morning merchandise, cakes, and baked goods.</p>
+                        <p class="my-lead text-black">Our bread is heated day by day at our pastry shop in East Horsley and is conveyed to our twelve shops. We utilize profoundly gifted specialty dough punchers to guarantee each portion of bread is flawless without fail.</p>
+                        <p class="my-lead text-black">Our pastry specialists work during that time with the goal that the portion of bread you purchase toward the beginning of the day is crisp out of the stove!</p>
+                        <button class="btn btn-primary rounded-pill border-0 mt-4 me-md-2 read-more-btn" type="button">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- card carousel -->
+        <div class="carousel-section margin-top margin-bot">
+            <h1 class="mb-5 fs-1 bolder-font1 text-black">Our <span class="text-danger fs-1 fw-bolder">Weekly</span> Top Picks</h1>
+
+            <!-- sliders -->
+            <div class="swiper slide-conatiner">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <!-- image1 -->
+                    <div class="swiper-slide">
+                        <div class="my-card">
+            
+                            <div class="card-image">
+                                <img src="images/cake1.jpg" alt="" class="card-img img-fluid">
+                            </div>
+                            <div class="card-content">
+                                <img src="images/rating.png" class="rating">
+                                <h3 class="cake-title">Mango Cheese Cake</h3>
+                                <p class="my-lead fw-bold" style="color: #F54749">BDT 65</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- image2 -->
+                    <div class="swiper-slide">
+
+                        <div class="my-card">
+                            <div class="card-image">
+                                <img src="images/cake2.jpg" alt="" class="card-img img-fluid">
+                            </div>
+                            <div class="card-content">
+                                <img src="images/rating.png" class="rating">
+                                <h3 class="cake-title">Tier Truffle Cake</h3>
+                                <p class="my-lead fw-bold" style="color: #F54749">BDT 125</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- image3 -->
+                    <div class="swiper-slide">
+
+                        <div class="my-card">
+                            <div class="card-image">
+                                <img src="images/cake3.jpg" alt="" class="card-img img-fluid">
+                            </div>
+                            <div class="card-content">
+                                <img src="images/rating.png" class="rating">
+                                <h3 class="cake-title">Aqua Blue Velvet Cupcake</h3>
+                                <p class="my-lead fw-bold" style="color: #F54749">BDT 90</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- image4 -->
+                    <div class="swiper-slide">
+
+                        <div class="my-card">
+                            <div class="card-image">
+                                <img src="images/cake4.jpg" alt="" class="card-img img-fluid">
+                            </div>
+                            <div class="card-content">
+                                <img src="images/rating.png" class="rating">
+                                <h3 class="cake-title">Chocolate Muffin</h3>
+                                <p class="my-lead fw-bold" style="color: #F54749">BDT 20</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- image5 -->
+                    <div class="swiper-slide">
+
+                        <div class="my-card">
+                            <div class="card-image">
+                                <img src="images/cake5.jpg" alt="" class="card-img img-fluid">
+                            </div>
+                            <div class="card-content">
+                                <img src="images/rating.png" class="rating">
+                                <h3 class="cake-title">Cream Drop Chocolate Cake</h3>
+                                <p class="my-lead fw-bold" style="color: #F54749">BDT 65</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- image6 -->
+                    <div class="swiper-slide">
+
+                        <div class="my-card">
+                            <div class="card-image">
+                                <img src="images/cake6.jpg" alt="" class="card-img img-fluid">
+                            </div>
+                            <div class="card-content">
+                                <img src="images/rating.png" class="rating">
+                                <h3 class="cake-title">Chocolate Brigadeiro</h3>
+                                <p class="my-lead fw-bold" style="color: #F54749">BDT 80</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- slides button -->
+                <div class="swiper-button-next carousel-btn"></div>
+                <div class="swiper-button-prev carousel-btn"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Baker Intro Section -->
+        <div class="row section-height align-items-center">
+            <div class="col-12 col-md-7 px-5">
+                <div class="my-box2 my-box2-margin-bot baker-text">
+                    <h1 class="fs-1 bolder-font1 text-black">Meet Our <br> Professional <span class="text-danger fs-1 fw-bolder">Baker</span></h1>
+                        <p class="my-lead">Welcome to our cake shop, where every slice tells a story! We are proud to introduce our talented baker, who crafts each and every cake with precision and passion. With years of experience and a commitment to using only the finest ingredients, our baker's creations are not only delicious, but also a feast for the eyes. From classic flavors to unique and creative combinations, our cakes are sure to satisfy any sweet tooth. So come in and indulge in a slice of happiness today!</p>
+
+                        <button class="btn btn-primary rounded-pill border-0 py-2 mt-4 me-md-2 baker-btn" type="button">Read More</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5">
+                <div class="my-box2">
+                    <img src="images/Chef.png"class="img-fluid baker-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- offer capsule -->
+        <div class="row offer rounded-pill d-flex justify-content-between align-items-center">
+            <div class="col offer-text">
+                <h1>Special Offer <span style="color:yellow;font-size: 4rem;">Only Sunday</span> Discount 50%</h1>
+            </div>
+            <div class="col">
+                <img src="images/Chocolate-Cake.png" alt="" class="img-fluid offer-img">
+            </div>
+        </div>
+
+
+        <!-- customer review -->
+        <div class="review my-5">
+            <h1 class="text-black text-center my-5">People Say About<br>Our <span class="text-danger fs-1 fw-bolder">Bakery</span></h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body tbox">
+                            <h3 class="card-title">Sweet Cheese Cake</h3>
+                            <p class="card-text text-black">"I am really satisfied with the Cheese Cake.Your company is truly upstanding and is behind its product 100%. Thank you for making it painless, pleasant and most of all hassle free!"</p>
+                            <p class="text-black">- Nathalia W.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body tbox">
+                            <h3 class="card-title">Best Taste</h3>
+                            <p class="card-text text-black">"I will let my mum know about this, she could really make use of cheese cake! We were treated like royalty."</p>
+                            <p class="text-black">- Roch K.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body tbox">
+                            <h3 class="card-title">Well Organized</h3>
+                            <p class="card-text text-black">"This is simply unbelievable! this thing is getting better and better as I learn more about it. It's just amazing. I can't say enough about Well Organized cake shop."</p>
+                            <p class="text-black">- Katya F.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col hide">
+                    <div class="card">
+                        <div class="card-body tbox">
+                            <h3 class="card-title text-danger">Great Services</h3>
+                            <p class="card-text text-black">"Thanks for the great service. You've saved our business! No matter where you go, Best Bakery is the coolest, most happening thing around!"</p>
+                            <p class="text-black">- Blondelle G.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col hide">
+                    <div class="card">
+                        <div class="card-body tbox">
+                            <h3 class="card-title">Tasty Cakes</h3>
+                            <p class="card-text text-black">"Tasty cakes was worth a fortune to my company. I am completely blown away. Really good. I am completely blown away."</p>
+                            <p class="text-black">- Thurstan I.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col hide">
+                    <div class="card">
+                        <div class="card-body tbox">
+                            <h3 class="card-title">Well Served</h3>
+                            <p class="card-text text-black">"Just what I was looking for. Nice work on your they are very well Served. Nice work on your they are very well Served. It's the perfect solution for our business."</p>
+                            <p class="text-black">- Alena I.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary rounded-pill border-0 py-2 mt-4 mx-auto view-btn" type="button">View More</button>
+                
+            </div>
+        </div>
+
+      
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer-clean">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h2 class="display-5 text-shadow mt-0 text-white">BakedCake</h2>
+                </div>
+
+                <!-- about column  -->
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Cakes Menu</a></li>
+                        <li><a href="#">Custom Design</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- contact info -->
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Contacts</h3>
+                    <table class="contact-table">
+                        <tr>
+                            <td>Phone</td>
+                            <td><a href="#">+8801823425034</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>E-mail</td>
+                            <td><a href="mailto:tushar.shihab13@gmail.com">tushar.shihab13@gmail.com</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Address</td>
+                            <td><a href="#">151/2/33, Tarabag, <span class="address-wrap">Khilgaon, Dhaka-1219</span></a></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <!-- social media -->
+                <div class="col-lg-3 item social">
+                    <h3>Social</h3>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyright">Ali Mohammad Tushar Shihab © 2023</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <!-- swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- swiper JS -->
+    <script src="js/swiper-script.js"></script>
+
+
+    <!-- toggle review JS -->
+    <script src="js/hide-review.js"></script>
+
+</body>
+</html>
