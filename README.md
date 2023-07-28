@@ -38,4 +38,4 @@ Use this section to recap over some of my basic learnings while working through 
 ## Author
 
 - Github - [@tshihab](https://github.com/tshihab)
-- Linkedin - [@Tuhshar Shihab](https://www.linkedin.com/in/tushar-shihab-08293015b/)
+- Linkedin - [@Tuhshar Shihab](https://www.linkedin.com/in/tshihab07/)
